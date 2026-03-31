@@ -1,0 +1,150 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0f0;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1606312619344-73cfaa3a44b6');
+      background-size: cover;
+      background-position: center;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+    }
+
+    .service h3 {
+      margin-top: 0;
+      color: #0f0;
+    }
+
+    .agendamento {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .agendamento select,
+    .agendamento input,
+    .agendamento button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #222;
+      color: white;
+      border: 1px solid #444;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .avancar-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .campos-contato {
+      margin-top: 10px;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scaleY(0.9); }
+      to { opacity: 1; transform: scaleY(1); }
+    }
+
+    .agendamento button.confirmar {
+      background-color: #28a745;
+      margin-top: 5px;
+    }
+
+    .agendamento button.confirmar:hover {
+      background-color: #218838;
+    }
+
+    #btnAvancar {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+
+    #btnAvancar:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }

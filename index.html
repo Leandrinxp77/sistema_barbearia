@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="./css/style.css">
+
+  
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Barber-pole-icon.svg/120px-Barber-pole-icon.svg.png" alt="Logo Barbearia Souto">
+    <h1>Barbearia Lm</h1>
+    <p>Estilo, tradição e cuidado com você</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="hero">
+    Seu novo estilo começa aqui
+  </div>
+
+  <div class="content" id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>A Barbearia Lm oferece um ambiente moderno com um toque retrô, onde o atendimento é personalizado e o cliente é sempre prioridade. Com profissionais experientes, garantimos cortes de cabelo e barba de alta qualidade.</p>
+  </div>
+
+  <div class="content" id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Corte Masculino</h3>
+        <p>Do clássico ao moderno, fazemos o corte ideal para você.</p>
+      </div>
+      <div class="service">
+        <h3>Barba</h3>
+        <p>Modelagem, aparo e hidratação da barba com produtos de qualidade.</p>
+      </div>
+      <div class="service">
+        <h3>Pigmentação</h3>
+        <p>Destaque sua aparência com pigmentação de cabelo ou barba.</p>
+      </div>
+    </div>
+
+    <div class="agendamento">
+      <select id="servico">
+        <option disabled selected>Selecione o Serviço</option>
+        <option>Corte</option>
+        <option>Corte + Barba</option>
+        <option>Corte + Sobrancelha</option>
+        <option>Barba</option>
+        <option>Pigmentação</option>
+        <option>Coloração</option>
+      </select>
+
+      <input type="date" id="data" onchange="atualizarHorarios()" />
+
+      <select id="horario">
+        <option disabled selected>Selecione o Horário</option>
+      </select>
+
+      <select id="profissional" onchange="atualizarHorarios()">
+        <option disabled selected>Selecione o Profissional</option>
+        <option>Leandro Miguel</option>
+        <option>Israel (Bil)</option>
+        <option>Jhow</option>
+        <option>Gabriel</option>
+      </select>
+
+      <div class="avancar-container">
+        <button id="btnAvancar" onclick="mostrarCamposContato()">Avançar</button>
+
+        <div id="camposContato" class="campos-contato">
+          <input type="text" id="nome" placeholder="Seu nome completo" />
+          <input type="text" id="telefone" placeholder="WhatsApp com DDD" />
+          <button class="confirmar" onclick="enviarParaWhatsApp()">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" id="contato">
+    <h2>Contato</h2>
+    <p>Endereço: Antõnio de avila rebouças 5116, Bauru - SP</p>
+    <p>Telefone: (14) 99737-2384</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Barbearia Lm. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
