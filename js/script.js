@@ -61,7 +61,7 @@
         return;
       }
 
-      const mensagem = `Olá, gostaria de confirmar meu agendamento na Barbearia Souto:%0A- Nome: ${nome}%0A- Número: ${telefoneCliente}%0A- Serviço: ${servico}%0A- Data: ${data}%0A- Horário: ${horario}%0A- Profissional: ${profissional}`;
+      const mensagem = `Olá, gostaria de confirmar meu agendamento na Barbearia Lm:%0A- Nome: ${nome}%0A- Número: ${telefoneCliente}%0A- Serviço: ${servico}%0A- Data: ${data}%0A- Horário: ${horario}%0A- Profissional: ${profissional}`;
       const telefone = '5514997781030';
       window.location.href = `https://wa.me/${telefone}?text=${mensagem}`;
     }
